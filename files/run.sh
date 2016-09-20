@@ -25,7 +25,7 @@ export PUPPETBOARD_OFFLINE_MODE=${PUPPETBOARD_OFFLINE_MODE:-"false"}
 export PUPPETBOARD_ENABLE_CATALOG=${PUPPETBOARD_ENABLE_CATALOG:-"false"}
 export PUPPETBOARD_OVERVIEW_FILTER=${PUPPETBOARD_OVERVIEW_FILTER:-}
 export PUPPETBOARD_GRAPH_FACTS=${PUPPETBOARD_GRAPH_FACTS:-"architecture clientversion domain lsbcodename lsbdistcodename lsbdistid lsbdistrelease lsbmajdistrelease netmask osfamily puppetversion processorcount"}
-export PUPPETBOARD_INVENTORY_FACTS=${PUPPETBOARD_INVENTORY_FACTS:-"[('Hostname','fqdn'),('IP Address','ipaddress'),('OS','lsbdistdescription'),('Architecture','hardwaremodel'),('Kernel Version','kernelrelease'),('Puppet Version','puppetversion')]}"}
+export PUPPETBOARD_INVENTORY_FACTS=${PUPPETBOARD_INVENTORY_FACTS:-"[('Hostname','fqdn'),('IP Address','ipaddress'),('OS','lsbdistdescription'),('Architecture','hardwaremodel'),('Kernel Version','kernelrelease'),('Puppet Version','puppetversion')]"}
 export PUPPETBOARD_REFRESH_RATE=${PUPPETBOARD_REFRESH_RATE:-30}
 
 /usr/bin/gunicorn -b $PUPPETBOARD_LISTEN_IP:$PUPPETBOARD_LISTEN_PORT wsgi:application
