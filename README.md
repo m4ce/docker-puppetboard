@@ -29,7 +29,7 @@ Generic configuration can be driven by exporting the following enviroment variab
 
 ## Run
 ```
-docker run -d --restart=always -p -e PUPPETBOARD_LOGLEVEL=warning 8000:8000 m4ce/puppetboard
+docker run -d --restart=always -p 8000:8000 -e PUPPETBOARD_LOGLEVEL=warning m4ce/puppetboard
 ```
 
 ## Contact
