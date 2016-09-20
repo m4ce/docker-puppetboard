@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# run.py
+# run.sh
 #
 # Author: Matteo Cerutti <matteo.cerutti@hotmail.co.uk>
 #
