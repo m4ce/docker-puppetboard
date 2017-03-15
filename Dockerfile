@@ -3,7 +3,7 @@ MAINTAINER Matteo Cerutti <matteo.cerutti@hotmail.co.uk>
 
 ENV PUPPETBOARD_VERSION "0.2.0"
 
-RUN yum clean all && yum install -y supervisor nginx uwsgi uwsgi-plugin-python && rm -rf /var/cache/yum/* && pip install puppetboard==$PUPPETBOARD_VERSION && rm -rf /root/.cache
+RUN yum clean all && yum install -y epel-release && yum install -y supervisor nginx uwsgi uwsgi-plugin-python && rm -rf /var/cache/yum/* && pip install puppetboard==$PUPPETBOARD_VERSION && rm -rf /root/.cache
 
 COPY files/supervisor.ini /etc/supervisord.d/puppetboard.ini
 COPY files/settings.py /etc/puppetboard/
